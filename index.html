@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello, World!</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="welcome-card" aria-labelledby="page-title">
+        <button class="theme-toggle" id="themeToggle" type="button" aria-pressed="false">Dark mode</button>
+        <div class="brand-mark" aria-hidden="true">✦</div>
+        <p class="eyebrow">A little moment of clarity</p>
+        <h1 class="title" id="page-title">Hello, World!</h1>
+        <p class="description">A simple welcome, styled with a Fluent-inspired touch.</p>
+        <div class="time-panel">
+          <span class="time-label">Current time (UTC)</span>
+          <p id="currentTime" aria-live="polite"></p>
+        </div>
+        <section class="link-tabs" aria-label="Helpful links">
+          <div class="tab-list" role="tablist" aria-label="Link categories">
+            <button class="tab-button" id="fluent-tab" type="button" role="tab" aria-selected="true" aria-controls="fluent-panel" tabindex="0">Fluent links</button>
+            <button class="tab-button" id="github-tab" type="button" role="tab" aria-selected="false" aria-controls="github-panel" tabindex="-1">GitHub repositories</button>
+          </div>
+          <div class="tab-panel" id="fluent-panel" role="tabpanel" aria-labelledby="fluent-tab">
+            <nav class="actions" aria-label="Fluent links">
+              <a class="button button-primary" href="https://fluent2.microsoft.design/" target="_blank" rel="noopener noreferrer">Explore Fluent UI</a>
+              <a class="button button-secondary" href="https://learn.microsoft.com/en-us/fluent-ui/" target="_blank" rel="noopener noreferrer">Read the docs</a>
+            </nav>
+          </div>
+          <div class="tab-panel" id="github-panel" role="tabpanel" aria-labelledby="github-tab" hidden>
+            <nav class="actions" aria-label="GitHub repositories">
+              <a class="button button-primary" href="https://github.com/microsoft/fluentui" target="_blank" rel="noopener noreferrer">Fluent UI</a>
+              <a class="button button-secondary" href="https://github.com/microsoft/fluentui-web-components" target="_blank" rel="noopener noreferrer">Fluent UI Web Components</a>
+              <a class="button button-secondary" href="https://github.com/microsoft/fluentui-system-icons" target="_blank" rel="noopener noreferrer">Fluent UI System Icons</a>
+            </nav>
+          </div>
+        </section>
+      </section>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
